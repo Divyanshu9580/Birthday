@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎂 Happy Birthday Kritika 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
+
+    :root {
+      --pink: #ff9a9e;
+      --lavender: #a18cd1;
+      --peach: #fad0c4;
+      --gold: #ffcc70;
+      --white: #fff;
+      --shadow: 0 10px 25px rgba(0,0,0,0.15);
+      --radius: 20px;
+      --font-main: "Poppins", sans-serif;
+      --font-fancy: "Pacifico", cursive;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: linear-gradient(135deg, var(--pink), var(--lavender), var(--peach));
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: #333;
+      position: relative;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Sparkle fall effect */
+    .sparkle {
+      position: fixed;
+      top: -10px;
+      width: 5px;
+      height: 5px;
+      background: radial-gradient(circle, #fff 20%, transparent 80%);
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: sparkleFall 5s linear infinite;
+    }
+
+    @keyframes sparkleFall {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      margin: 80px auto;
+      padding: 40px 25px;
+      max-width: 600px;
+      position: relative;
+      z-index: 10;
+    }
+
+    h1 {
+      font-family: var(--font-fancy);
+      font-size: 3rem;
+      color: #ff4d6d;
+      text-shadow: 0 0 20px rgba(255,77,109,0.7);
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 20px rgba(255,77,109,0.7); }
+      50% { text-shadow: 0 0 40px #ff85a1; }
+    }
+
+    h2 {
+      color: #444;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .photos img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 3px solid #fff;
+      box-shadow: var(--shadow);
+      transition: transform 0.4s;
+    }
+
+    .photos img:hover {
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    .wishes {
+      background: linear-gradient(90deg, #fff4f8, #f9e9ff);
+      border-radius: 14px;
+      padding: 18px;
+      font-size: 1.05rem;
+      box-shadow: var(--shadow);
+      color: #333;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 8px 18px rgba(37, 211, 102, 0.3);
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebd5d;
+    }
+
+    .madeby {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Balloons */
+    .balloon {
+      position: absolute;
+      width: 40px;
+      height: 50px;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .balloon:nth-child(1) { left: 20%; background: #ffb3c6; animation-delay: 0s; }
+    .balloon:nth-child(2) { left: 60%; background: #b5e48c; animation-delay: 2s; }
+    .balloon:nth-child(3) { left: 80%; background: #fcd5ce; animation-delay: 4s; }
+
+    @keyframes float {
+      0% { transform: translateY(100px); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-400px); opacity: 0; }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2021/09/02/audio_4f1ff48a47.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Sparkles -->
+  <div class="sparkle" style="left:5%; animation-delay:0s;"></div>
+  <div class="sparkle" style="left:15%; animation-delay:1s;"></div>
+  <div class="sparkle" style="left:25%; animation-delay:2s;"></div>
+  <div class="sparkle" style="left:35%; animation-delay:3s;"></div>
+  <div class="sparkle" style="left:45%; animation-delay:4s;"></div>
+  <div class="sparkle" style="left:55%; animation-delay:1.5s;"></div>
+  <div class="sparkle" style="left:65%; animation-delay:2.5s;"></div>
+  <div class="sparkle" style="left:75%; animation-delay:3.5s;"></div>
+  <div class="sparkle" style="left:85%; animation-delay:4.5s;"></div>
+  <div class="sparkle" style="left:95%; animation-delay:5s;"></div>
+
+  <!-- Floating Balloons -->
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+
+  <!-- Birthday Card -->
+  <div class="card">
+    <h1>🎂 Happy Birthday Kritika 💖</h1>
+    <h2>Wishing our shining star endless smiles and happiness ✨</h2>
+
+    <div class="photos">
+      <img src="k1.jpg" alt="Kritika 1">
+      <img src="k2.jpg" alt="Kritika 2">
+      <img src="k3.jpg" alt="Kritika 3">
+      <img src="k4.jpg" alt="Kritika 4">
+    </div>
+
+    <div class="wishes">
+      💝 Dear Kritika,<br><br>
+      Your smile shines brighter than all the stars in the sky 🌟<br>
+      May this birthday bring you moments filled with love, laughter, and sparkle!<br><br>
+      You’re a blessing, a beauty, and the reason for so many smiles 💫<br><br>
+      <strong>Keep glowing, keep smiling & stay amazing! 💗</strong>
+    </div>
+
+    <a href="https://wa.me/918102863799?text=🎉%20Happy%20Birthday%20Kritika%20💖%0AWishing%20you%20a%20day%20filled%20with%20love%2C%20smiles%20and%20sparkles!%20✨%0A-From%20Your_Name" 
+   target="_blank" class="whatsapp-btn">
+   💬 Wish Kritika on WhatsApp
+</a>
+
+
+    <div class="madeby">Made with ❤️ by <strong>Divyanshu</strong></div>
+  </div>
+
+</body>
+</html>
